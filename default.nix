@@ -16,6 +16,7 @@ pkgs.mkShell {
         pkgs.llvmPackages_rocm.bintools
         pkgs.llvmPackages_rocm.clang
         pkgs.libclang
+        pkgs.openssl
     ];
 
     RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
